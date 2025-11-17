@@ -1,0 +1,211 @@
+Mods: {
+	Discordya: {
+		Generic: {
+			MainMenu: En el Menú Principal
+			MainMenuState: Con {0} mods cargados.
+			Fighting: Peleando con
+			In: En
+			Day: de Día
+			Night: de Noche
+			Health: "PV: "
+			Mana: "PM: "
+			Defense: "DEF: "
+			Damage: DPS
+			Dead: Muerto
+			Playing: Jugando, ¡qué divertido!
+			PlayingWorld: Jugando {0} {1}
+			MasterMode: en Modo Maestro
+			ExpertMode: en Modo Experto
+			NormalMode: en Modo Normal
+		}
+
+		Event: {
+			Vanilla: {
+				Party: una Fiesta
+				Sandstorm: una Tormenta de Arena
+				SlimeRain: una Lluvia de Slimes
+				OldOnesArmy: el Ejército del Antiguo
+				GoblinInvasion: una Invasión de Duendes
+				BloodMoon: una Luna Sangrienta
+				FrostLegion: una Legión Congelada
+				PirateInvasion: una Invasión Pirata
+				PumpkinMoon: una Luna de Calabaza
+				FrostMoon: una Luna Gélida
+				SolarEclipse: un Eclipse Solar
+				MartianEvent: una Locura Marciana
+				SolarPillar: un Pilar Solar
+				VortexPillar: un Pilar Vórtex
+				NebulaPillar: un Pilar Nebula
+				StardustPillar: un Pilar de Polvo Estelar
+			}
+
+			Calamity: {
+				AcidRain: una Lluvia Ácida
+				BossRush: Boss Rush
+			}
+		}
+
+		Biome: {
+			Vanilla: {
+				Forest: el Bosque
+				Underground: el Subsuelo
+				Cavern: una Caverna
+				Ocean: el Océano
+				Mushroom: un Bioma de Hongos
+				Jungle: la Jungla
+				UndergroundJungle: la Jungla Subterránea
+				Desert: Desierto
+				UndergroundDesert: el Desierto Subterráneo
+				Snow: la Nieve
+				Tundra: la Tundra
+				Hallow: la Bendición
+				UndergroundHallow: la Bendición Subterránea
+				Corruption: Corrupción
+				UndergroundCorruption: Corrupción Subterránea
+				Crimson: Carmesí
+				UndergroundCrimson: Carmesí Subterráneo
+				UndergroundMushroom: un Bioma de Hongos Subterráneo
+				GraniteCave: una Cueva de Granito
+				MarbleCave: una Cueva de Mármol
+				Hive: una Colmena
+				Dungeon: la Mazmorra
+				JungleTemple: el Templo de la Jungla
+				Space: el Espacio
+				Underworld: el Inframundo
+				Meteor: un Meteoro Caído
+				Town: un Pueblo
+			}
+
+			Calamity: {
+				SunkenSea: el Mar Hundido
+				SulphurousSea: el Mar Sulfúrico
+				Abyss: el Abismo
+				BrimstoneCrag: el Peñasco de Azufre
+				AstralInfection: la Infección Astral
+			}
+
+			Gensokyo.SubterraneanSun: el Sol Subterráneo
+		}
+
+		Boss: {
+			Vanilla: {
+				KingSlime: Rey Slime
+				EyeOfCthulhu: Ojo de Cthulhu
+				EaterOfWorlds: Devoramundos
+				BrainOfCthulhu: Cerebro de Cthulhu
+				QueenBee: Reina Abeja
+				Skeletron: Esqueletrón
+				Deerclops: Deerclops
+				WallOfFlesh: Muro Carnoso
+				TheTwins: Los Gemelos
+				TheDestroyer: El Destructor
+				SkeletronPrime: Esqueletrón Mayor
+				Plantera: Plantera
+				EmpressOfLight: Emperatriz de la Luz
+				Golem: Gólem
+				DukeFishron: Duque Fishron
+				LunaticCultist: Cultista Lunático
+				MoonLord: El Señor de la Luna
+				QueenSlime: Reina Slime
+			}
+
+			Calamity: {
+				DesertScourge: El Azote del Desierto
+				GiantClam: Almejandra
+				Crabulon: Crabulon
+				ThePerforators: Los Perforadores
+				TheHiveMind: La Mente de la Colmena
+				SlimeGod: El Dios Slime
+				Cryogen: Cryogen
+				AquaticScourge: El Azote Acuático
+				BrimstoneElemental: Elemental de Azufre
+				Calamitas: Calamitas
+				GreatSandShark: El Gran Tiburón de las Arenas
+				Leviathan: Anahita y Leviatán
+				AstrumAureus: Astrum Aureus
+				Plaguebringer: Plaguebringer Goliath
+				Ravager: Ravager
+				AstrumDeus: Astrum Deus
+				ProfanedGuardians: Los Guardianes Profanos
+				Dragonfolly: Dragonfolly
+				Providence: Providencia, la Diosa Profana
+				CeaselessVoid: El Vacío Incesante
+				StormWeaver: El Tejedor de Tormentas
+				Signus: Signus, Enviado del Devorador
+				Polterghast: Polterghast
+				OldDuke: El Viejo Duque
+				TheDevourerOfGods: El Devorador de Dioses
+				Yharon: Yharon
+				ExoMechs: Draedon y los Exo Mecánicos
+				SupremeCalamitas: Calamitas Suprema
+				ImpossibleDamnBoss: Eidolón Primordial
+			}
+
+			StarsAbove: {
+				TheVagrantOfSpaceAndTime: El Vagabundo del Espacio Tiempo
+				NaulhaunTheBurnishedKing: Naulhaun, el Rey Bruñido
+				PenthesileaTheWitchOfInk: Pentesilea, la Bruja de la Tinta
+				TheWarriorOfLight: El Guerrero de Luz
+				Tsukiyomi: Tsukiyomi, la Primera Viajera Estelar
+			}
+		}
+
+		Config: {
+			DisplayName: Configuración
+			InternalDetailsHeader: Ajustes del menú principal
+			GameDetailsHeader: Ajustes en juego
+
+			DisplayModVersion: {
+				Label: Mostrar versión del mod
+				Tooltip: Si está habilitado, la versión de Discordya y tModLoader se mostrará en el RPC mientras esté en el menú principal de Terraria.
+			}
+
+			DisplayModQuantity: {
+				Label: Mostrar cantidad de mods
+				Tooltip: Si está habilitado, mostrará cuántos mods hay habilitados mientras está en el menú principal de Terraria.
+			}
+
+			DisplayHealth: {
+				Label: Mostrar vida
+				Tooltip: ""
+			}
+
+			DisplayMana: {
+				Label: Mostrar maná
+				Tooltip: ""
+			}
+
+			DisplayTime: {
+				Label: Mostrar tiempo del Día
+				Tooltip: ""
+			}
+
+			DisplayDefense: {
+				Label: Mostrar defensa
+				Tooltip: ""
+			}
+
+			DisplayBossFights: {
+				Label: Mostrar peleas de jefes
+				Tooltip: ""
+			}
+
+			DisplayCurrentItem: {
+				Label: Mostrar ítem actual
+				Tooltip: ""
+			}
+		}
+
+		Configs: {
+			DiscordyaConfig: {
+				// DisplayName: Discordya Config
+				// DisplayHealth.Tooltip: ""
+				// DisplayMana.Tooltip: ""
+				// DisplayTime.Tooltip: ""
+				// DisplayDefense.Tooltip: ""
+				// DisplayBossFights.Tooltip: ""
+				// DisplayCurrentItem.Tooltip: ""
+			}
+		}
+	}
+}

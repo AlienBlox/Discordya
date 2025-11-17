@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\Alien\OneDrive\文档\Discordya\Discordya.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E416F0BA-F103-4280-8AC3-91526F917F3D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Discordya</AssemblyName>
+    <ApplicationVersion>0.0.0.0</ApplicationVersion>
+    <RootNamespace>Discordya</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Collections" />
+    <Reference Include="System.Linq" />
+    <Reference Include="System.Runtime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DiscordyaMod.cs" />
+    <Compile Include="DiscordyaSystem.cs" />
+    <Compile Include="Utils\PresenceUtils.cs" />
+    <Compile Include="Player\DiscordyaPlayer.cs" />
+    <Compile Include="Logger\ModLogger.cs" />
+    <Compile Include="Language\LanguageHelper.cs" />
+    <Compile Include="Game\GamePresenceProcessor.cs" />
+    <Compile Include="DiscordClient\DiscordClientHelper.cs" />
+    <Compile Include="DiscordClient\DiscordClientStorage.cs" />
+    <Compile Include="DiscordClient\Presence\DiscordPresence.cs" />
+    <Compile Include="CrossMod\CrossMod.cs" />
+    <Compile Include="CrossMod\CrossModCompatibility.cs" />
+    <Compile Include="Config\DiscordyaConfig.cs" />
+    <Compile Include="Biome\Biome.cs" />
+    <Compile Include="Biome\BiomeManager.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

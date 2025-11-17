@@ -1,0 +1,211 @@
+Mods: {
+	Discordya: {
+		Generic: {
+			MainMenu: In Terraria Main Menu
+			MainMenuState: Loaded {0} mods.
+			Fighting: Fighting
+			In: In
+			Day: Day
+			Night: Night
+			Health: "HP: "
+			Mana: "MP: "
+			Defense: "DEF: "
+			Damage: DMG
+			Dead: Dead
+			Playing: Playing, how fun!
+			PlayingWorld: Playing {0} {1}
+			MasterMode: on Master Mode
+			ExpertMode: on Expert Mode
+			NormalMode: on Normal Mode
+		}
+
+		Event: {
+			Vanilla: {
+				Party: Party
+				Sandstorm: Sandstorm
+				SlimeRain: Slime Rain
+				OldOnesArmy: Old One's Army
+				GoblinInvasion: Goblin Invasion
+				BloodMoon: Blood Moon
+				FrostLegion: Frost Legion
+				PirateInvasion: Pirate Invasion
+				PumpkinMoon: Pumpkin Moon
+				FrostMoon: Frost Moon
+				SolarEclipse: Solar Eclipse
+				MartianEvent: Martian Madness
+				SolarPillar: Solar Pillar
+				VortexPillar: Vortex Pillar
+				NebulaPillar: Nebula Pillar
+				StardustPillar: Stardust Pillar
+			}
+
+			Calamity: {
+				AcidRain: Acid Rain
+				BossRush: Boss Rush
+			}
+		}
+
+		Biome: {
+			Vanilla: {
+				Forest: Forest
+				Underground: Underground
+				Cavern: Cavern
+				Ocean: Ocean
+				Mushroom: Mushroom
+				Jungle: Jungle
+				UndergroundJungle: Underground Jungle
+				Desert: Desert
+				UndergroundDesert: Underground Desert
+				Snow: Snow
+				Tundra: Tundra
+				Hallow: Hallow
+				UndergroundHallow: Underground Hallow
+				Corruption: Corruption
+				UndergroundCorruption: Underground Corruption
+				Crimson: Crimson
+				UndergroundCrimson: Underground Crimson
+				UndergroundMushroom: Underground Mushroom
+				GraniteCave: Granite Cave
+				MarbleCave: Marble Cave
+				Hive: Hive
+				Dungeon: Dungeon
+				JungleTemple: Jungle Temple
+				Space: Space
+				Underworld: Underworld
+				Meteor: Fallen Meteor
+				Town: Town
+			}
+
+			Calamity: {
+				SunkenSea: Sunken Sea
+				SulphurousSea: Sulphurous Sea
+				Abyss: the Abyss
+				BrimstoneCrag: Brimstone Crag
+				AstralInfection: Astral Infection
+			}
+
+			Gensokyo.SubterraneanSun: Subterranean Sun
+		}
+
+		Boss: {
+			Vanilla: {
+				KingSlime: King Slime
+				EyeOfCthulhu: Eye of Cthulhu
+				EaterOfWorlds: Eater of Worlds
+				BrainOfCthulhu: Brain of Cthulhu
+				QueenBee: Queen Bee
+				Skeletron: Skeletron
+				Deerclops: Deerclops
+				WallOfFlesh: Wall of Flesh
+				TheTwins: The Twins
+				TheDestroyer: The Destroyer
+				SkeletronPrime: Skeletron Prime
+				Plantera: Plantera
+				EmpressOfLight: Empress of Light
+				Golem: Golem
+				DukeFishron: Duke Fishron
+				LunaticCultist: Lunatic Cultist
+				MoonLord: Moon Lord
+				QueenSlime: Queen Slime
+			}
+
+			Calamity: {
+				DesertScourge: Desert Scourge
+				GiantClam: Giant Clam
+				Crabulon: Crabulon
+				ThePerforators: The Perforators
+				TheHiveMind: The Hive Mind
+				SlimeGod: The Slime God
+				Cryogen: Cryogen
+				AquaticScourge: Aquatic Scourge
+				BrimstoneElemental: Brimstone Elemental
+				Calamitas: Calamitas
+				GreatSandShark: Great Sand Shark
+				Leviathan: Anahita & Leviathan
+				AstrumAureus: Astrum Aureus
+				Plaguebringer: Plaguebringer Goliath
+				Ravager: Ravager
+				AstrumDeus: Astrum Deus
+				ProfanedGuardians: Profaned Guardians
+				Dragonfolly: Dragonfolly
+				Providence: Providence
+				CeaselessVoid: Ceaseless Void
+				StormWeaver: Storm Weaver
+				Signus: Signus, Envoy of the Devourer
+				Polterghast: Polterghast
+				OldDuke: The Old Duke
+				TheDevourerOfGods: The Devourer of Gods
+				Yharon: Jungle Dragon, Yharon
+				ExoMechs: Draedon & Exo Mechs
+				SupremeCalamitas: Supreme Calamitas
+				ImpossibleDamnBoss: Primordial Wyrm
+			}
+
+			StarsAbove: {
+				TheVagrantOfSpaceAndTime: The Vagrant of Space and Time
+				NaulhaunTheBurnishedKing: Naulhaun, the Burnished King
+				PenthesileaTheWitchOfInk: Penthesilea, the Witch on Ink
+				TheWarriorOfLight: The Warrior of Light
+				Tsukiyomi: Tsukiyomi, the First Starfarer
+			}
+		}
+
+		Config: {
+			DisplayName: Discordya Config
+			InternalDetailsHeader: Main menu settings
+			GameDetailsHeader: In-game settings
+
+			DisplayModVersion: {
+				Label: Display Mod version
+				Tooltip: If enabled, Discordya and tModLoader's version will show on your RPC while in Terraria's Main Menu.
+			}
+
+			DisplayModQuantity: {
+				Label: Display Mod quantity
+				Tooltip: If enabled, it will show how many mods you have enabled on your RPC while in Terraria's Main Menu.
+			}
+
+			DisplayHealth: {
+				Label: Display Health
+				Tooltip: ""
+			}
+
+			DisplayMana: {
+				Label: Display Mana
+				Tooltip: ""
+			}
+
+			DisplayTime: {
+				Label: Display Time
+				Tooltip: ""
+			}
+
+			DisplayDefense: {
+				Label: Display Defense
+				Tooltip: ""
+			}
+
+			DisplayBossFights: {
+				Label: Display Boss Fights
+				Tooltip: ""
+			}
+
+			DisplayCurrentItem: {
+				Label: Display Current Item
+				Tooltip: ""
+			}
+		}
+
+		Configs: {
+			DiscordyaConfig: {
+				DisplayName: Discordya Config
+				DisplayHealth.Tooltip: ""
+				DisplayMana.Tooltip: ""
+				DisplayTime.Tooltip: ""
+				DisplayDefense.Tooltip: ""
+				DisplayBossFights.Tooltip: ""
+				DisplayCurrentItem.Tooltip: ""
+			}
+		}
+	}
+}
