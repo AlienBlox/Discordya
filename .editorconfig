@@ -1,0 +1,4 @@
+﻿[*.cs]
+
+# CommonCollisionName: Common type collision name
+dotnet_diagnostic.CommonCollisionName.severity = none
