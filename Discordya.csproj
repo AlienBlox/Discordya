@@ -33,6 +33,10 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DiscordRPC, Version=1.0.175.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\DiscordRPC.dll</HintPath>
+    </Reference>
     <Reference Include="System.Collections" />
     <Reference Include="System.Linq" />
     <Reference Include="System.Runtime" />
