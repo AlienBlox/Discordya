@@ -55,5 +55,22 @@
     <Compile Include="Biome\BiomeManager.cs" />
     <Compile Include="AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="description.txt" />
+    <Content Include="description_workshop.txt" />
+    <Content Include="Discordya.dll" />
+    <Content Include="Discordya.pdb" />
+    <Content Include="icon.png" />
+    <Content Include="lib\DiscordRPC.dll" />
+    <Content Include="LICENSE.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".gitattributes" />
+    <None Include=".gitignore" />
+    <None Include="Info" />
+    <None Include="Localization\en-US.hjson" />
+    <None Include="Localization\es-ES.hjson" />
+    <None Include="Properties\launchSettings.json" />
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
