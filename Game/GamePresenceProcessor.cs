@@ -5,6 +5,7 @@
 // Assembly location: C:\Users\Alien\OneDrive\文档\Discordya\Discordya.dll
 
 using Discordya.Config;
+using Discordya.Biome;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -49,7 +50,7 @@ namespace Discordya.Game
       float priority = 50f)
     {
       if (this._discordyaMod.GetBiomeManager().GetBiomeList().Count > -1)
-        this._discordyaMod.GetBiomeManager().GetBiomeList().Add(new Discordya.Biome.Biome(biomeConditional, bigKey, bigText, (string) null, priority));
+        this._discordyaMod.GetBiomeManager().GetBiomeList().Add(new Biomes(biomeConditional, bigKey, bigText, (string) null, priority));
       else
         this._discordyaMod.GetModLogger().Log("Failed to add Biome " + bigKey + ".");
     }
@@ -82,7 +83,7 @@ namespace Discordya.Game
       if (this._discordyaMod.GetBiomeManager().GetBiomeList().Count > -1)
       {
         float num = -1f;
-        foreach (Discordya.Biome.Biome biome in this._discordyaMod.GetBiomeManager().GetBiomeList())
+        foreach (Biomes biome in this._discordyaMod.GetBiomeManager().GetBiomeList())
         {
           if (biome._biomeConditional() && (double) biome.GetPriority() >= (double) num)
           {

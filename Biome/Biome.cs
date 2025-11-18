@@ -9,7 +9,7 @@ using System;
 #nullable disable
 namespace Discordya.Biome
 {
-  internal class Biome
+  internal class Biomes
   {
     public Func<bool> _biomeConditional;
     private readonly string _bigKey;
@@ -17,7 +17,7 @@ namespace Discordya.Biome
     private readonly string _customClientAppId;
     private readonly float _priority;
 
-    public Biome(
+    public Biomes(
       Func<bool> biomeConditional = null,
       string bigKey = "unknown_biome",
       string bigText = "Unknown Biome",

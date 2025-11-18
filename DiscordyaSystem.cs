@@ -14,7 +14,7 @@ namespace Discordya
   {
     private readonly DiscordyaMod _discordyaMod = DiscordyaMod._discordyaMod;
 
-    public virtual void OnWorldUnload()
+    public override void OnWorldUnload()
     {
       if (Main.dedServ)
         return;

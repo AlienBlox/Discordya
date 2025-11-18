@@ -25,7 +25,7 @@ namespace Discordya.Player
 
     private uint cooldown => 60;
 
-    public virtual void PostUpdate() => this.ClientUpdate();
+    public override void PostUpdate() => this.ClientUpdate();
 
     private void ClientUpdate()
     {
@@ -113,7 +113,7 @@ namespace Discordya.Player
       return (str1, str2);
     }
 
-    public virtual void OnEnterWorld()
+    public override void OnEnterWorld()
     {
       if (((Entity) this.Player).whoAmI != Main.myPlayer)
         return;
@@ -123,7 +123,7 @@ namespace Discordya.Player
       this._discordyaMod.worldInfo = string.Format(this._discordyaMod.GetLanguageHelper().GetText("Generic.PlayingWorld"), (object) worldName, (object) str);
     }
 
-    public virtual void Kill(
+    public override void Kill(
       double damage,
       int hitDirection,
       bool pvp,
@@ -134,7 +134,7 @@ namespace Discordya.Player
       this._dead = true;
     }
 
-    public virtual void OnRespawn()
+    public override void OnRespawn()
     {
       if (((Entity) this.Player).whoAmI != Main.myPlayer)
         return;

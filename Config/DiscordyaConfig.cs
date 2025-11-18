@@ -45,12 +45,12 @@ namespace Discordya.Config
     [DefaultValue(true)]
     public bool DisplayCurrentItem;
 
-    public virtual ConfigScope Mode => (ConfigScope) 1;
+    public override ConfigScope Mode => ConfigScope.ClientSide;
 
-    public virtual void OnChanged()
+    public override void OnChanged()
     {
       DiscordyaPlayer discordyaPlayer;
-      Main.player[Main.myPlayer].TryGetModPlayer<DiscordyaPlayer>(ref discordyaPlayer);
+      Main.player[Main.myPlayer].TryGetModPlayer<DiscordyaPlayer>(out discordyaPlayer);
       discordyaPlayer?.ClientUpdatePlayer();
     }
   }

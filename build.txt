@@ -1,3 +1,4 @@
 displayName = Discord Rich Presence
-author = Fack You
-version = 0.1
+author = Doremy (AlienBlox's Edit)
+version = 1.0.6.1
+dllReferences = DiscordRPC

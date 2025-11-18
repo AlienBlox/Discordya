@@ -11,10 +11,10 @@ namespace Discordya.Biome
 {
   public class BiomeManager
   {
-    private readonly List<Discordya.Biome.Biome> _biomeList;
+    private readonly List<Biomes> _biomeList;
 
-    public BiomeManager() => this._biomeList = new List<Discordya.Biome.Biome>();
+    public BiomeManager() => this._biomeList = new List<Biomes>();
 
-    internal List<Discordya.Biome.Biome> GetBiomeList() => this._biomeList;
+    internal List<Biomes> GetBiomeList() => this._biomeList;
   }
 }

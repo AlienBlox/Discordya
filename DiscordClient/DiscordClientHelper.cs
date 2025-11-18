@@ -55,7 +55,7 @@ namespace Discordya.DiscordClient
       CrossModCompatibility modCompatibility = this._discordyaMod.GetCrossModCompatibility();
       if (modCompatibility.GetModList().Count == 0)
         return;
-      modCompatibility.GetModList().ForEach((Action<Discordya.CrossMod.CrossMod>) (mod => this._discordClientStorage.AddApplicationId(mod.GetModIdentifier(), mod.GetApplicationIdentifier())));
+      modCompatibility.GetModList().ForEach((Action<CrossMods>) (mod => this._discordClientStorage.AddApplicationId(mod.GetModIdentifier(), mod.GetApplicationIdentifier())));
       this.ChangeClient(modCompatibility.GetPreferredMod().GetModIdentifier());
     }
 

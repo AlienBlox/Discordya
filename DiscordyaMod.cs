@@ -35,7 +35,7 @@ namespace Discordya
 
         public DiscordyaMod() => DiscordyaMod._discordyaMod = this;
 
-        public virtual void Load()
+        public override void Load()
         {
             if (Main.dedServ)
                 return;
@@ -49,7 +49,7 @@ namespace Discordya
             this._discordClientHelper.MakeClient();
         }
 
-        public virtual void PostSetupContent()
+        public override void PostSetupContent()
         {
             if (Main.dedServ)
                 return;
@@ -63,7 +63,7 @@ namespace Discordya
             }))));
         }
 
-        public virtual void Unload()
+        public override void Unload()
         {
             this._discordClientHelper?.KillClient();
             this._crossModCompatibility?.UnloadModCompatibility();

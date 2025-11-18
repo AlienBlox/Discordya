@@ -7,13 +7,13 @@
 #nullable disable
 namespace Discordya.CrossMod
 {
-  public class CrossMod
+  public class CrossMods
   {
     private readonly string _modIdentifier;
     private readonly string _applicationIdentifier;
     private readonly string _applicationBigImage;
 
-    internal CrossMod(
+    internal CrossMods(
       string modIdentifier,
       string applicationIdentifier,
       string applicationBigImage)
