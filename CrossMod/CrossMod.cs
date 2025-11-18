@@ -7,26 +7,26 @@
 #nullable disable
 namespace Discordya.CrossMod
 {
-  public class CrossMods
-  {
-    private readonly string _modIdentifier;
-    private readonly string _applicationIdentifier;
-    private readonly string _applicationBigImage;
+	public class CrossMods
+	{
+		private readonly string _modIdentifier;
+		private readonly string _applicationIdentifier;
+		private readonly string _applicationBigImage;
 
-    internal CrossMods(
-      string modIdentifier,
-      string applicationIdentifier,
-      string applicationBigImage)
-    {
-      this._modIdentifier = modIdentifier;
-      this._applicationIdentifier = applicationIdentifier;
-      this._applicationBigImage = applicationBigImage;
-    }
+		internal CrossMods(
+		  string modIdentifier,
+		  string applicationIdentifier,
+		  string applicationBigImage)
+		{
+			this._modIdentifier = modIdentifier;
+			this._applicationIdentifier = applicationIdentifier;
+			this._applicationBigImage = applicationBigImage;
+		}
 
-    internal string GetModIdentifier() => this._modIdentifier;
+		internal string GetModIdentifier() => this._modIdentifier;
 
-    internal string GetApplicationIdentifier() => this._applicationIdentifier;
+		internal string GetApplicationIdentifier() => this._applicationIdentifier;
 
-    internal string GetApplicationBigImage() => this._applicationBigImage;
-  }
+		internal string GetApplicationBigImage() => this._applicationBigImage;
+	}
 }

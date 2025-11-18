@@ -9,34 +9,34 @@ using System;
 #nullable disable
 namespace Discordya.Biome
 {
-  internal class Biomes
-  {
-    public Func<bool> _biomeConditional;
-    private readonly string _bigKey;
-    private readonly string _bigText;
-    private readonly string _customClientAppId;
-    private readonly float _priority;
+	internal class Biomes
+	{
+		public Func<bool> _biomeConditional;
+		private readonly string _bigKey;
+		private readonly string _bigText;
+		private readonly string _customClientAppId;
+		private readonly float _priority;
 
-    public Biomes(
-      Func<bool> biomeConditional = null,
-      string bigKey = "unknown_biome",
-      string bigText = "Unknown Biome",
-      string customClientAppId = "default",
-      float priority = 0.0f)
-    {
-      this._biomeConditional = biomeConditional;
-      this._bigKey = bigKey;
-      this._bigText = bigText;
-      this._customClientAppId = customClientAppId;
-      this._priority = priority;
-    }
+		public Biomes(
+		  Func<bool> biomeConditional = null,
+		  string bigKey = "unknown_biome",
+		  string bigText = "Unknown Biome",
+		  string customClientAppId = "default",
+		  float priority = 0.0f)
+		{
+			this._biomeConditional = biomeConditional;
+			this._bigKey = bigKey;
+			this._bigText = bigText;
+			this._customClientAppId = customClientAppId;
+			this._priority = priority;
+		}
 
-    internal string GetBigKey() => this._bigKey;
+		internal string GetBigKey() => this._bigKey;
 
-    internal string GetBigText() => this._bigText;
+		internal string GetBigText() => this._bigText;
 
-    internal string GetCustomClientAppId() => this._customClientAppId;
+		internal string GetCustomClientAppId() => this._customClientAppId;
 
-    internal float GetPriority() => this._priority;
-  }
+		internal float GetPriority() => this._priority;
+	}
 }

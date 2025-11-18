@@ -7,12 +7,12 @@
 #nullable disable
 namespace Discordya.Language
 {
-  public class LanguageHelper
-  {
-    internal LanguageHelper(DiscordyaMod discordyaMod)
-    {
-    }
+	public class LanguageHelper
+	{
+		internal LanguageHelper(DiscordyaMod discordyaMod)
+		{
+		}
 
-    internal string GetText(string key) => Terraria.Localization.Language.GetText("Mods.Discordya." + key).Value;
-  }
+		internal string GetText(string key) => Terraria.Localization.Language.GetText("Mods.Discordya." + key).Value;
+	}
 }

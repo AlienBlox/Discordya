@@ -10,15 +10,15 @@ using Terraria.ModLoader;
 #nullable disable
 namespace Discordya
 {
-  public class DiscordyaSystem : ModSystem
-  {
-    private readonly DiscordyaMod _discordyaMod = DiscordyaMod._discordyaMod;
+	public class DiscordyaSystem : ModSystem
+	{
+		private readonly DiscordyaMod _discordyaMod = DiscordyaMod._discordyaMod;
 
-    public override void OnWorldUnload()
-    {
-      if (Main.dedServ)
-        return;
-      this._discordyaMod.GetPresenceUtils().SetMainMenuPresence();
-    }
-  }
+		public override void OnWorldUnload()
+		{
+			if (Main.dedServ)
+				return;
+			this._discordyaMod.GetPresenceUtils().SetMainMenuPresence();
+		}
+	}
 }

@@ -7,29 +7,29 @@
 #nullable disable
 namespace Discordya.Logger
 {
-  public class ModLogger
-  {
-    private DiscordyaMod _discordyaMod;
+	public class ModLogger
+	{
+		private DiscordyaMod _discordyaMod;
 
-    public ModLogger(DiscordyaMod discordyaMod) => this._discordyaMod = discordyaMod;
+		public ModLogger(DiscordyaMod discordyaMod) => this._discordyaMod = discordyaMod;
 
-    public void Log(string msg, byte level = 0)
-    {
-      switch (level)
-      {
-        case 1:
-          this._discordyaMod.Logger.Debug((object) msg);
-          break;
-        case 2:
-          this._discordyaMod.Logger.Warn((object) msg);
-          break;
-        case 3:
-          this._discordyaMod.Logger.Error((object) msg);
-          break;
-        default:
-          this._discordyaMod.Logger.Info((object) msg);
-          break;
-      }
-    }
-  }
+		public void Log(string msg, byte level = 0)
+		{
+			switch (level)
+			{
+				case 1:
+					this._discordyaMod.Logger.Debug((object)msg);
+					break;
+				case 2:
+					this._discordyaMod.Logger.Warn((object)msg);
+					break;
+				case 3:
+					this._discordyaMod.Logger.Error((object)msg);
+					break;
+				default:
+					this._discordyaMod.Logger.Info((object)msg);
+					break;
+			}
+		}
+	}
 }

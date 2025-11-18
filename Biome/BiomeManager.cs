@@ -9,12 +9,12 @@ using System.Collections.Generic;
 #nullable disable
 namespace Discordya.Biome
 {
-  public class BiomeManager
-  {
-    private readonly List<Biomes> _biomeList;
+	public class BiomeManager
+	{
+		private readonly List<Biomes> _biomeList;
 
-    public BiomeManager() => this._biomeList = new List<Biomes>();
+		public BiomeManager() => this._biomeList = new List<Biomes>();
 
-    internal List<Biomes> GetBiomeList() => this._biomeList;
-  }
+		internal List<Biomes> GetBiomeList() => this._biomeList;
+	}
 }

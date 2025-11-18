@@ -9,23 +9,23 @@ using System.Collections.Generic;
 #nullable disable
 namespace Discordya.DiscordClient
 {
-  public class DiscordClientStorage
-  {
-    private readonly Dictionary<string, string> _discordApplicationDictionary;
+	public class DiscordClientStorage
+	{
+		private readonly Dictionary<string, string> _discordApplicationDictionary;
 
-    internal DiscordClientStorage()
-    {
-      this._discordApplicationDictionary = new Dictionary<string, string>();
-    }
+		internal DiscordClientStorage()
+		{
+			this._discordApplicationDictionary = new Dictionary<string, string>();
+		}
 
-    internal void AddApplicationId(string applicationIdentifier, string applicationId)
-    {
-      this._discordApplicationDictionary.Add(applicationIdentifier, applicationId);
-    }
+		internal void AddApplicationId(string applicationIdentifier, string applicationId)
+		{
+			this._discordApplicationDictionary.Add(applicationIdentifier, applicationId);
+		}
 
-    internal string GetApplicationId(string applicationIdentifier)
-    {
-      return this._discordApplicationDictionary[applicationIdentifier];
-    }
-  }
+		internal string GetApplicationId(string applicationIdentifier)
+		{
+			return this._discordApplicationDictionary[applicationIdentifier];
+		}
+	}
 }
