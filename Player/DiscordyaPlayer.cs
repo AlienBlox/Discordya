@@ -136,7 +136,7 @@ namespace Discordya.Player
 
     public override void OnRespawn()
     {
-      if (((Entity) this.Player).whoAmI != Main.myPlayer)
+        if (((Entity) this.Player).whoAmI != Main.myPlayer)
         return;
       this._dead = false;
     }
