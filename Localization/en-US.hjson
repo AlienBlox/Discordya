@@ -1,5 +1,14 @@
 Mods: {
 	Discordya: {
+		MessageAlienBlox: {
+			Message1: AlienBlox's Edit of {M} Loaded!
+			Message2: - Make sure to check AlienBlox's YouTube channel at [c/00FF00:www.youtube.com/@AlienBloxxer]
+			Message3: - Also buy AlienBlox's Patreon at [C/00FF00:https://www.patreon.com/c/AlienBlox]
+			Message4: - Join AlienBlox's Discord server at [c/00FF00:http://discord.gg/R4DH9pmbCN]
+			Message5: - See all AlienBlox's important links at [c/00FF00:https://linktr.ee/AlienBlox]
+			Message6: - Join AlienBlox's Roblox group at [c/00FF00:https://www.roblox.com/communities/872497747/Official-AlienBloxs-Mod-UGC-Store]
+		}
+
 		Generic: {
 			MainMenu: In Terraria Main Menu
 			MainMenuState: Loaded {0} mods.
