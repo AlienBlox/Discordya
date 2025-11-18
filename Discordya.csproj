@@ -8,9 +8,6 @@
 		
 	</PropertyGroup>
 	<ItemGroup>
-	  <AdditionalFiles Include="Localization\en-US_Mods.Discordya.hjson.old" />
-	</ItemGroup>
-	<ItemGroup>
 	  <Reference Include="DiscordRPC">
 	    <HintPath>lib\DiscordRPC.dll</HintPath>
 	  </Reference>
