@@ -19,19 +19,19 @@ namespace DiscordyaV2.Utils
 
 		internal PresenceUtils(DiscordyaMod discordyaMod)
 		{
-			this._discordyaMod = discordyaMod;
-			this._discordClientHelper = discordyaMod.GetDiscordClientHelper();
+			_discordyaMod = discordyaMod;
+			_discordClientHelper = discordyaMod.GetDiscordClientHelper();
 		}
 
 		internal void SetMainMenuPresence()
 		{
-			this._discordClientHelper.GetDiscordPresence().SetClientStatus(this._discordyaMod.GetLanguageHelper().GetText("Generic.MainMenu"), ModContent.GetInstance<DiscordyaConfig>().DisplayModQuantity ? string.Format(this._discordyaMod.GetLanguageHelper().GetText("Generic.MainMenuState"), (object)Terraria.ModLoader.ModLoader.Mods.Length) : (string)null, this.GetPreferredBigImage(), ModContent.GetInstance<DiscordyaConfig>().DisplayModVersion ? string.Format("DiscordyaV2 v{0} | tModLoader v{1}", (object)this._discordyaMod.Version, (object)this._discordyaMod.TModLoaderVersion) : (string)null);
-			this._discordClientHelper.GetDiscordPresence().UpdateClientPresence();
+			_discordClientHelper.GetDiscordPresence().SetClientStatus(_discordyaMod.GetLanguageHelper().GetText("Generic.MainMenu"), ModContent.GetInstance<DiscordyaConfig>().DisplayModQuantity ? string.Format(_discordyaMod.GetLanguageHelper().GetText("Generic.MainMenuState"), (object)Terraria.ModLoader.ModLoader.Mods.Length) : (string)null, GetPreferredBigImage(), ModContent.GetInstance<DiscordyaConfig>().DisplayModVersion ? string.Format("DiscordyaV2 v{0} | tModLoader v{1}", (object)_discordyaMod.Version, (object)_discordyaMod.TModLoaderVersion) : (string)null);
+			_discordClientHelper.GetDiscordPresence().UpdateClientPresence();
 		}
 
 		internal string GetPreferredBigImage()
 		{
-			return this._discordyaMod.GetCrossModCompatibility().GetModList().Count == 0 ? "terraria" : this._discordyaMod.GetCrossModCompatibility().GetPreferredMod().GetApplicationBigImage();
+			return _discordyaMod.GetCrossModCompatibility().GetModList().Count == 0 ? "terraria" : _discordyaMod.GetCrossModCompatibility().GetPreferredMod().GetApplicationBigImage();
 		}
 	}
 }

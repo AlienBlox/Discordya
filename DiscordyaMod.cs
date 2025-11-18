@@ -39,57 +39,57 @@ namespace DiscordyaV2
 		{
 			if (Main.dedServ)
 				return;
-			this._logger = new ModLogger(this);
-			this._languageHelper = new LanguageHelper(this);
-			this._discordClientHelper = new DiscordClientHelper(this);
-			this._presenceUtils = new PresenceUtils(this);
-			this._biomeManager = new BiomeManager();
-			this.bossDictionary = new Dictionary<int, (string, string, string, float)>();
-			this._gamePresenceProcessor = new GamePresenceProcessor(DiscordyaMod._discordyaMod);
-			this._discordClientHelper.MakeClient();
+			_logger = new ModLogger(this);
+			_languageHelper = new LanguageHelper(this);
+			_discordClientHelper = new DiscordClientHelper(this);
+			_presenceUtils = new PresenceUtils(this);
+			_biomeManager = new BiomeManager();
+			bossDictionary = new Dictionary<int, (string, string, string, float)>();
+			_gamePresenceProcessor = new GamePresenceProcessor(DiscordyaMod._discordyaMod);
+			_discordClientHelper.MakeClient();
 		}
 
 		public override void PostSetupContent()
 		{
 			if (Main.dedServ)
 				return;
-			this._crossModCompatibility = new CrossModCompatibility(DiscordyaMod._discordyaMod);
-			this._crossModCompatibility.LoadModCompatibility();
-			this._discordClientHelper.SetupCrossModClient();
+			_crossModCompatibility = new CrossModCompatibility(DiscordyaMod._discordyaMod);
+			_crossModCompatibility.LoadModCompatibility();
+			_discordClientHelper.SetupCrossModClient();
 			Task.Factory.StartNew<Task>((Func<Task>)(() => Task.Factory.StartNew((Action)(() =>
 			{
 				Task.Delay(2000).Wait();
-				this._presenceUtils.SetMainMenuPresence();
+				_presenceUtils.SetMainMenuPresence();
 			}))));
 		}
 
 		public override void Unload()
 		{
-			this._discordClientHelper?.KillClient();
-			this._crossModCompatibility?.UnloadModCompatibility();
-			this._gamePresenceProcessor = (GamePresenceProcessor)null;
-			this.bossDictionary = (Dictionary<int, (string, string, string, float)>)null;
-			this.worldInfo = (string)null;
-			this._biomeManager = (BiomeManager)null;
-			this._discordClientHelper = (DiscordClientHelper)null;
-			this._crossModCompatibility = (CrossModCompatibility)null;
-			this._presenceUtils = (PresenceUtils)null;
-			this._logger = (ModLogger)null;
+			_discordClientHelper?.KillClient();
+			_crossModCompatibility?.UnloadModCompatibility();
+			_gamePresenceProcessor = (GamePresenceProcessor)null;
+			bossDictionary = (Dictionary<int, (string, string, string, float)>)null;
+			worldInfo = (string)null;
+			_biomeManager = (BiomeManager)null;
+			_discordClientHelper = (DiscordClientHelper)null;
+			_crossModCompatibility = (CrossModCompatibility)null;
+			_presenceUtils = (PresenceUtils)null;
+			_logger = (ModLogger)null;
 			DiscordyaMod._discordyaMod = (DiscordyaMod)null;
 		}
 
-		internal ModLogger GetModLogger() => this._logger;
+		internal ModLogger GetModLogger() => _logger;
 
-		internal LanguageHelper GetLanguageHelper() => this._languageHelper;
+		internal LanguageHelper GetLanguageHelper() => _languageHelper;
 
-		internal CrossModCompatibility GetCrossModCompatibility() => this._crossModCompatibility;
+		internal CrossModCompatibility GetCrossModCompatibility() => _crossModCompatibility;
 
-		internal DiscordClientHelper GetDiscordClientHelper() => this._discordClientHelper;
+		internal DiscordClientHelper GetDiscordClientHelper() => _discordClientHelper;
 
-		internal PresenceUtils GetPresenceUtils() => this._presenceUtils;
+		internal PresenceUtils GetPresenceUtils() => _presenceUtils;
 
-		internal BiomeManager GetBiomeManager() => this._biomeManager;
+		internal BiomeManager GetBiomeManager() => _biomeManager;
 
-		internal GamePresenceProcessor GetGamePresenceProcessor() => this._gamePresenceProcessor;
+		internal GamePresenceProcessor GetGamePresenceProcessor() => _gamePresenceProcessor;
 	}
 }

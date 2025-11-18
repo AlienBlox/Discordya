@@ -18,15 +18,15 @@ namespace DiscordyaV2.CrossMod
 		  string applicationIdentifier,
 		  string applicationBigImage)
 		{
-			this._modIdentifier = modIdentifier;
-			this._applicationIdentifier = applicationIdentifier;
-			this._applicationBigImage = applicationBigImage;
+			_modIdentifier = modIdentifier;
+			_applicationIdentifier = applicationIdentifier;
+			_applicationBigImage = applicationBigImage;
 		}
 
-		internal string GetModIdentifier() => this._modIdentifier;
+		internal string GetModIdentifier() => _modIdentifier;
 
-		internal string GetApplicationIdentifier() => this._applicationIdentifier;
+		internal string GetApplicationIdentifier() => _applicationIdentifier;
 
-		internal string GetApplicationBigImage() => this._applicationBigImage;
+		internal string GetApplicationBigImage() => _applicationBigImage;
 	}
 }

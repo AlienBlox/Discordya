@@ -25,7 +25,7 @@ namespace DiscordyaV2.Player
 
 		private uint cooldown => 60;
 
-		public override void PostUpdate() => this.ClientUpdate();
+		public override void PostUpdate() => ClientUpdate();
 
 		private void ClientUpdate()
 		{
@@ -33,57 +33,57 @@ namespace DiscordyaV2.Player
 				return;
 			if (Main.gamePaused || Main.gameInactive)
 			{
-				this._pauseUpdate = true;
+				_pauseUpdate = true;
 			}
 			else
 			{
-				++this._prevCount;
-				this._pauseUpdate = false;
+				++_prevCount;
+				_pauseUpdate = false;
 			}
-			if (this._prevCount % this.cooldown != 0U || this._pauseUpdate)
+			if (_prevCount % cooldown != 0U || _pauseUpdate)
 				return;
-			if (this.shouldReloadCache)
+			if (shouldReloadCache)
 			{
-				this.shouldReloadCache = false;
-				this._discordyaMod.GetGamePresenceProcessor().ReloadCache();
+				shouldReloadCache = false;
+				_discordyaMod.GetGamePresenceProcessor().ReloadCache();
 			}
-			this.ClientUpdatePlayer();
-			this.ClientForceUpdate();
+			ClientUpdatePlayer();
+			ClientForceUpdate();
 		}
 
 		internal void ClientUpdatePlayer()
 		{
 			if (Main.LocalPlayer == null)
 				return;
-			(string bigImageKey, string state, string _) = this._discordyaMod.GetGamePresenceProcessor().GetBoss();
+			(string bigImageKey, string state, string _) = _discordyaMod.GetGamePresenceProcessor().GetBoss();
 			string details = "";
 			if (!Main.LocalPlayer.GetModPlayer<DiscordyaPlayer>()._dead)
 			{
 				if (ModContent.GetInstance<DiscordyaConfig>().DisplayHealth)
-					details = this._discordyaMod.GetLanguageHelper().GetText("Generic.Health") + Main.LocalPlayer.statLife.ToString();
+					details = _discordyaMod.GetLanguageHelper().GetText("Generic.Health") + Main.LocalPlayer.statLife.ToString();
 				if (ModContent.GetInstance<DiscordyaConfig>().DisplayMana)
-					details = details + " " + this._discordyaMod.GetLanguageHelper().GetText("Generic.Mana") + Main.LocalPlayer.statMana.ToString();
+					details = details + " " + _discordyaMod.GetLanguageHelper().GetText("Generic.Mana") + Main.LocalPlayer.statMana.ToString();
 				if (ModContent.GetInstance<DiscordyaConfig>().DisplayDefense)
-					details = details + " " + this._discordyaMod.GetLanguageHelper().GetText("Generic.Defense") + Main.LocalPlayer.statDefense.ToString();
+					details = details + " " + _discordyaMod.GetLanguageHelper().GetText("Generic.Defense") + Main.LocalPlayer.statDefense.ToString();
 				if (string.IsNullOrWhiteSpace(details))
-					details = this._discordyaMod.GetLanguageHelper().GetText("Generic.Playing");
+					details = _discordyaMod.GetLanguageHelper().GetText("Generic.Playing");
 			}
 			else
 			{
-				details = this._discordyaMod.GetLanguageHelper().GetText("Generic.Dead");
+				details = _discordyaMod.GetLanguageHelper().GetText("Generic.Dead");
 				state = (string)null;
 			}
 			string smallImageKey = (string)null;
 			string smallImageText = (string)null;
 			if (ModContent.GetInstance<DiscordyaConfig>().DisplayCurrentItem)
-				(smallImageKey, smallImageText) = this.GetItemStatFields();
-			this._discordClientHelper.GetDiscordPresence().SetClientStatus(details, state, bigImageKey, this._discordyaMod.worldInfo, smallImageKey, smallImageText);
-			this._discordClientHelper.GetDiscordPresence().UpdateClientPresence();
+				(smallImageKey, smallImageText) = GetItemStatFields();
+			_discordClientHelper.GetDiscordPresence().SetClientStatus(details, state, bigImageKey, _discordyaMod.worldInfo, smallImageKey, smallImageText);
+			_discordClientHelper.GetDiscordPresence().UpdateClientPresence();
 		}
 
 		private void ClientForceUpdate()
 		{
-			DiscordRpcClient rpcClient = this._discordClientHelper.GetRpcClient();
+			DiscordRpcClient rpcClient = _discordClientHelper.GetRpcClient();
 			if (rpcClient == null || rpcClient.IsDisposed || rpcClient.IsInitialized)
 				return;
 			rpcClient.Initialize();
@@ -108,19 +108,19 @@ namespace DiscordyaV2.Player
 			if (num >= 0)
 			{
 				str1 = "atk_" + str3.ToLower();
-				str2 = str2 + " (" + num.ToString() + " " + this._discordyaMod.GetLanguageHelper().GetText("Generic.Damage") + ")";
+				str2 = str2 + " (" + num.ToString() + " " + _discordyaMod.GetLanguageHelper().GetText("Generic.Damage") + ")";
 			}
 			return (str1, str2);
 		}
 
 		public override void OnEnterWorld()
 		{
-			if (((Entity)this.Player).whoAmI != Main.myPlayer)
+			if (((Entity)Player).whoAmI != Main.myPlayer)
 				return;
 			string worldName = Main.worldName;
 			bool expertMode = Main.expertMode;
-			string str = !Main.masterMode ? (!expertMode ? " " + this._discordyaMod.GetLanguageHelper().GetText("Generic.NormalMode") : " " + this._discordyaMod.GetLanguageHelper().GetText("Generic.ExpertMode")) : " " + this._discordyaMod.GetLanguageHelper().GetText("Generic.MasterMode");
-			this._discordyaMod.worldInfo = string.Format(this._discordyaMod.GetLanguageHelper().GetText("Generic.PlayingWorld"), (object)worldName, (object)str);
+			string str = !Main.masterMode ? (!expertMode ? " " + _discordyaMod.GetLanguageHelper().GetText("Generic.NormalMode") : " " + _discordyaMod.GetLanguageHelper().GetText("Generic.ExpertMode")) : " " + _discordyaMod.GetLanguageHelper().GetText("Generic.MasterMode");
+			_discordyaMod.worldInfo = string.Format(_discordyaMod.GetLanguageHelper().GetText("Generic.PlayingWorld"), (object)worldName, (object)str);
 		}
 
 		public override void Kill(
@@ -129,16 +129,16 @@ namespace DiscordyaV2.Player
 		  bool pvp,
 		  PlayerDeathReason damageSource)
 		{
-			if (Main.player[Main.myPlayer] != this.Player)
+			if (Main.player[Main.myPlayer] != Player)
 				return;
-			this._dead = true;
+			_dead = true;
 		}
 
 		public override void OnRespawn()
 		{
-			if (((Entity)this.Player).whoAmI != Main.myPlayer)
+			if (((Entity)Player).whoAmI != Main.myPlayer)
 				return;
-			this._dead = false;
+			_dead = false;
 		}
 	}
 }

@@ -15,17 +15,17 @@ namespace DiscordyaV2.DiscordClient
 
 		internal DiscordClientStorage()
 		{
-			this._discordApplicationDictionary = new Dictionary<string, string>();
+			_discordApplicationDictionary = new Dictionary<string, string>();
 		}
 
 		internal void AddApplicationId(string applicationIdentifier, string applicationId)
 		{
-			this._discordApplicationDictionary.Add(applicationIdentifier, applicationId);
+			_discordApplicationDictionary.Add(applicationIdentifier, applicationId);
 		}
 
 		internal string GetApplicationId(string applicationIdentifier)
 		{
-			return this._discordApplicationDictionary[applicationIdentifier];
+			return _discordApplicationDictionary[applicationIdentifier];
 		}
 	}
 }

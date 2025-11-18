@@ -24,19 +24,19 @@ namespace DiscordyaV2.Biome
 		  string customClientAppId = "default",
 		  float priority = 0.0f)
 		{
-			this._biomeConditional = biomeConditional;
-			this._bigKey = bigKey;
-			this._bigText = bigText;
-			this._customClientAppId = customClientAppId;
-			this._priority = priority;
+			_biomeConditional = biomeConditional;
+			_bigKey = bigKey;
+			_bigText = bigText;
+			_customClientAppId = customClientAppId;
+			_priority = priority;
 		}
 
-		internal string GetBigKey() => this._bigKey;
+		internal string GetBigKey() => _bigKey;
 
-		internal string GetBigText() => this._bigText;
+		internal string GetBigText() => _bigText;
 
-		internal string GetCustomClientAppId() => this._customClientAppId;
+		internal string GetCustomClientAppId() => _customClientAppId;
 
-		internal float GetPriority() => this._priority;
+		internal float GetPriority() => _priority;
 	}
 }

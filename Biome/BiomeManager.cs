@@ -13,8 +13,8 @@ namespace DiscordyaV2.Biome
 	{
 		private readonly List<Biomes> _biomeList;
 
-		public BiomeManager() => this._biomeList = new List<Biomes>();
+		public BiomeManager() => _biomeList = new List<Biomes>();
 
-		internal List<Biomes> GetBiomeList() => this._biomeList;
+		internal List<Biomes> GetBiomeList() => _biomeList;
 	}
 }

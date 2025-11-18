@@ -18,7 +18,7 @@ namespace DiscordyaV2
 		{
 			if (Main.dedServ)
 				return;
-			this._discordyaMod.GetPresenceUtils().SetMainMenuPresence();
+			_discordyaMod.GetPresenceUtils().SetMainMenuPresence();
 		}
 	}
 }
