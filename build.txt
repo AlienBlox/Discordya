@@ -1,0 +1,3 @@
+displayName = Discord Rich Presence
+author = Fack You
+version = 0.1
