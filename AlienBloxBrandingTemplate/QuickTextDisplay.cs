@@ -1,7 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Terraria;
 
-namespace Discordya.AlienBloxBrandingTemplate
+namespace DiscordyaV2.AlienBloxBrandingTemplate
 {
 	/// <summary>
 	/// Utility class made by AlienBlox, not part of the default Discord Rich Presence Mod,
@@ -18,11 +18,11 @@ namespace Discordya.AlienBloxBrandingTemplate
 		{
 			if (TextColor.HasValue)
 			{
-				Main.NewText(Terraria.Localization.Language.GetOrRegister($"Mods.Discordya.{key}"), TextColor);
+				Main.NewText(Terraria.Localization.Language.GetOrRegister($"Mods.DiscordyaV2.{key}"), TextColor);
 			}
 			else
 			{
-				Main.NewText(Terraria.Localization.Language.GetOrRegister($"Mods.Discordya.{key}"));
+				Main.NewText(Terraria.Localization.Language.GetOrRegister($"Mods.DiscordyaV2.{key}"));
 			}
 
 			DiscordyaMod._discordyaMod.Logger.Warn(o);

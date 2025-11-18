@@ -1,7 +1,7 @@
 ﻿using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Discordya.AlienBloxBrandingTemplate
+namespace DiscordyaV2.AlienBloxBrandingTemplate
 {
 	public class InfoItem : ModItem, ILocalizedModType
 	{

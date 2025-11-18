@@ -1,16 +1,16 @@
 ﻿// Decompiled with JetBrains decompiler
-// Type: Discordya.DiscordyaMod
-// Assembly: Discordya, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+// Type: DiscordyaV2.DiscordyaMod
+// Assembly: DiscordyaV2, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
 // MVID: 7EE41C03-D9DA-4741-BA28-096DF00C64EC
-// Assembly location: C:\Users\Alien\OneDrive\文档\My Games\Terraria\tModLoader\ModSources\Discordya\Discordya.dll
+// Assembly location: C:\Users\Alien\OneDrive\文档\My Games\Terraria\tModLoader\ModSources\DiscordyaV2\DiscordyaV2.dll
 
-using Discordya.Biome;
-using Discordya.CrossMod;
-using Discordya.DiscordClient;
-using Discordya.Game;
-using Discordya.Language;
-using Discordya.Logger;
-using Discordya.Utils;
+using DiscordyaV2.Biome;
+using DiscordyaV2.CrossMod;
+using DiscordyaV2.DiscordClient;
+using DiscordyaV2.Game;
+using DiscordyaV2.Language;
+using DiscordyaV2.Logger;
+using DiscordyaV2.Utils;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -18,7 +18,7 @@ using Terraria;
 using Terraria.ModLoader;
 
 #nullable disable
-namespace Discordya
+namespace DiscordyaV2
 {
 	public class DiscordyaMod : Mod
 	{

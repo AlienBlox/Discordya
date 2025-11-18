@@ -1,11 +1,11 @@
 ﻿// Decompiled with JetBrains decompiler
-// Type: Discordya.Game.GamePresenceProcessor
-// Assembly: Discordya, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+// Type: DiscordyaV2.Game.GamePresenceProcessor
+// Assembly: DiscordyaV2, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
 // MVID: 7EE41C03-D9DA-4741-BA28-096DF00C64EC
-// Assembly location: C:\Users\Alien\OneDrive\文档\Discordya\Discordya.dll
+// Assembly location: C:\Users\Alien\OneDrive\文档\DiscordyaV2\DiscordyaV2.dll
 
-using Discordya.Biome;
-using Discordya.Config;
+using DiscordyaV2.Biome;
+using DiscordyaV2.Config;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +14,7 @@ using Terraria.GameContent.Events;
 using Terraria.ModLoader;
 
 #nullable disable
-namespace Discordya.Game
+namespace DiscordyaV2.Game
 {
 	public class GamePresenceProcessor
 	{

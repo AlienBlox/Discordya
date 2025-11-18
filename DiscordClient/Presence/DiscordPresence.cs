@@ -1,13 +1,13 @@
 ﻿// Decompiled with JetBrains decompiler
-// Type: Discordya.DiscordClient.Presence.DiscordPresence
-// Assembly: Discordya, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+// Type: DiscordyaV2.DiscordClient.Presence.DiscordPresence
+// Assembly: DiscordyaV2, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
 // MVID: 7EE41C03-D9DA-4741-BA28-096DF00C64EC
-// Assembly location: C:\Users\Alien\OneDrive\文档\Discordya\Discordya.dll
+// Assembly location: C:\Users\Alien\OneDrive\文档\DiscordyaV2\DiscordyaV2.dll
 
 using DiscordRPC;
 
 #nullable disable
-namespace Discordya.DiscordClient.Presence
+namespace DiscordyaV2.DiscordClient.Presence
 {
 	public class DiscordPresence
 	{

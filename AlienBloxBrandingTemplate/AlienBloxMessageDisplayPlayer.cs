@@ -1,7 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Terraria.ModLoader;
 
-namespace Discordya.AlienBloxBrandingTemplate
+namespace DiscordyaV2.AlienBloxBrandingTemplate
 {
 	public class AlienBloxMessageDisplayPlayer : ModPlayer
 	{

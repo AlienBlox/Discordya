@@ -1,10 +1,10 @@
-[h1] Discordya - Discord Rich Presence [/h1]
-Discordya implements a completely, non existent, and brilliant Discord Presence status to your Terraria's 'Now Playing' status.
+[h1] DiscordyaV2 - Discord Rich Presence [/h1]
+DiscordyaV2 implements a completely, non existent, and brilliant Discord Presence status to your Terraria's 'Now Playing' status.
 
 Show off your in-game skills and statuses to Discord using the built-in Discord Rich Presence module.
-Discordya is now configurable! You can choose what you want to show on your presence, check it out!
+DiscordyaV2 is now configurable! You can choose what you want to show on your presence, check it out!
 
-[b]Currently, Discordya supports the following Journey's End vanilla content:[/b]
+[b]Currently, DiscordyaV2 supports the following Journey's End vanilla content:[/b]
  - All Biomes.
  - All Bosses.
  - All Events.
@@ -12,7 +12,7 @@ Discordya is now configurable! You can choose what you want to show on your pres
  - World name and difficulty.
 [img]https://i.imgur.com/bJVLuhh.png[/img]
 
-[b]Currently, Discordya supports the following 3rd-party Mods content:[/b]
+[b]Currently, DiscordyaV2 supports the following 3rd-party Mods content:[/b]
  - [u]CalamityMod:[/u]
     + Biomes: Sulphuric Sea, The Abyss, The Sunken Sea, Brimstone & Astral Infection.
     + Bosses: All Calamity Bosses.

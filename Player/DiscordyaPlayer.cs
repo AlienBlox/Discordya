@@ -1,18 +1,18 @@
 ﻿// Decompiled with JetBrains decompiler
-// Type: Discordya.Player.DiscordyaPlayer
-// Assembly: Discordya, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+// Type: DiscordyaV2.Player.DiscordyaPlayer
+// Assembly: DiscordyaV2, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
 // MVID: 7EE41C03-D9DA-4741-BA28-096DF00C64EC
-// Assembly location: C:\Users\Alien\OneDrive\文档\Discordya\Discordya.dll
+// Assembly location: C:\Users\Alien\OneDrive\文档\DiscordyaV2\DiscordyaV2.dll
 
 using DiscordRPC;
-using Discordya.Config;
-using Discordya.DiscordClient;
+using DiscordyaV2.Config;
+using DiscordyaV2.DiscordClient;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.ModLoader;
 
 #nullable disable
-namespace Discordya.Player
+namespace DiscordyaV2.Player
 {
 	public class DiscordyaPlayer : ModPlayer
 	{
