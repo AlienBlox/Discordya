@@ -1,4 +1,7 @@
 displayName = Discord Rich Presence
 author = Doremy (AlienBlox's Edit)
 version = 1.0.6.1
+includeSource = true
+hideResources = false
+hideCode = false;
 dllReferences = DiscordRPC
