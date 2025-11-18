@@ -36,5 +36,10 @@ F.A.Q:
  - A: As the mod has recently come out, some of the Discord assets are still being uploaded, this doesn't need any mod update to be fixed. All the assets will work in a few days (if there're non working assets, of course).
 
 Credits:
-- PurplefinNeptuna: For the boss priority code concept and the base mod idea (DiscordRP for tML 1.3).
-- Doremy: Brand new 1.4 port, code structure & optimization, cross mod compatibility and other stuff.
+ - PurplefinNeptuna: For the boss priority code concept and the base mod idea (DiscordRP for tML 1.3).
+ - Doremy: Brand new 1.4 port, code structure & optimization, cross mod compatibility and other stuff.
+
+AlienBlox's Edit:
+ - This version of Discord Rich Presence is edited and maintained by AlienBlox1234
+ - Decompiled and cleaned proudly in Ireland!
+ - For more info, ask AlienBlox on Discord!
