@@ -1,0 +1,13 @@
+body {
+    background-image: url(GlowingMushroomBackground.webp);
+    background-size: cover; /* scales the image to cover the container */
+}
+
+div {
+    background-color: #0000FF25;
+    border-radius: 15px;
+    outline: 5px solid #0000FF50;
+    transform: scale(0.9);
+    font: bold 1vw verdana;
+    color: #0000ae;
+}
